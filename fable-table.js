@@ -5,6 +5,8 @@
     this.table = wrapper.querySelector('table');
     this.header = this.table.querySelector('thead');
     this.headerClone = this.header.cloneNode(true);
+
+    this.checkAndMoveHeader = this.checkAndMoveHeader.bind(this);
   };
 
 
@@ -58,12 +60,12 @@
       this.headerClone.style.display = 'none';
     }
 
-    setTimeout(this.checkAndMoveHeader.bind(this), 500);
+    setTimeout(this.checkAndMoveHeader, 500);
     return this;
   };
 
   FableTable.prototype.addDistanceCheck = function() {
-    setTimeout(this.checkAndMoveHeader.bind(this), 500);
+    setTimeout(this.checkAndMoveHeader, 500);
 
     return this;
   };
