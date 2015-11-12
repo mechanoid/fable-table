@@ -1,0 +1,16 @@
+.fab-tab-wrapper {
+  width: 100%;
+  overflow: scroll;
+  position: relative;
+}
+
+.fab-tab-header {
+  /* initially hidden */
+  /*display: none;*/
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-color: #fff;
+  transition: top 1s;
+}
